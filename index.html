@@ -1,166 +1,105 @@
 <!DOCTYPE html>
-	<html>
-  		<head>
-			<meta charset="UTF-8">
-    			<title>Olga's Kitchen</title>
-    			<link rel="stylesheet" href="./style.css"/>
-    			<script src="./script.js"></script>
-  		</head>
-  	<body>
-    		<!-- Navigation Bar -->
-    		<nav>
-      			<div id="home">
-        			<div class="profile_name">
-          				Olga Kim
-          				<div class="contact_info">
-            					<img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          					olady1988@gmail.com
-        				</div>
-        				<div style="clear:both;"></div>
-        				<div class="contact_info">
-          					<img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          					+13456764598
-        				</div>
-        			</div>
-        		<div class="topdiv">
-          			<a class="topmenu" href="#about-me">About Me</a>
-          			<a class="topmenu" href="recipes">Skills</a>
-          			<a class="topmenu" href="#projects">Projects</a>
-          			<a class="topmenu" href="#recommendation">Recommendations</a>
-          			<!-- Add the links for Skills, Projects and Recommendation here -->
-        		</div>
-      			</div>    
-    		</nav>
-
-		<!-- About Me -->
-    		<section id="about-me" class="container">
-      			<div>
-        			<img src="./images/intro.jpg" alt="picture of Olga with her 2 kids" width="920" height="auto"  class="profile_image"/>
-      			</div>
-
-      			<div>
-          			<h1>Hi, I'm Olga Kim! <img src="https://cdn.pixabay.com/animation/2022/08/22/04/41/04-41-29-139_512.gif" alt="kyrgrz flag"  width="60"/></h1>
-          			<p>
-            				Babe, in the recommendations section , type what you want to say here... This is your intro section..
-          			</p>
-      			</div>
-    		</section>
-              
-    <!-- Skills: Rename this to recipes -->
-    <section id="recipes">
-      <h2>Recipes</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="./images/whole_pie.jpg"/>
-          <h6>Babes Sweet Potato Delight</h6>
-          <a href="./recipes/sweet_potato_pie.html" target= "_self">Babes Sweet Potato Delight</a >
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>Not your can of black eyed peas</h6>
-          <p>I need the recipe babe</p>
-        </div>  
-
-        <div class="skill">
-          <img src="python-logo-master-v3-TM.png"/>
-          <h6>Golden Cornbread</h6>
-          <p>where's the recipe babe??</p>
-        </div>
-
-        <div class="skill">
-            <img src="cpp_logo.png"/>
-            <h6>Christmas Bakery</h6>
-            <p>All your recipes in one place, i just need them to finish this section</p>
-        </div>
-
-        <div class="skill">
-            <img src="Node.js_logo.svg"/>
-            <h6>add more...</h6>
-            <p>don't be stingy... gimme the recipes babe</p>
-        </div>
-        <!-- Add more skills here -->
-
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Thanksgiving Potluck</h3>
-            <ul>
-              <li>Responsible for cooking the turkey, sweet potato pie, black eyed peas and cornbread for my church 2024 Thanksgiving potluck</li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Olady Kitchen</title>
+  </head>
+  <body>
+    <div id="body">
+      
+      <div id="header">
+        <div id="header-top">
+          <img id="header-img" src="https://cdn.pixabay.com/photo/2024/03/02/09/20/ai-generated-8608179_960_720.jpg" alt="AI generated tree" height=auto width=400>
+          <div id="nav-bar">
+            <ul id="header-list">
+              <li><a href="https://github.com/miccordre">Github Page</a></li>
+              <li><div id="dropdown">
+                <div>Recipes By Catagory</div>
+                <div class="dropdown-content">
+                  <a href="">Breakfest</a>
+                  <a href="">Lunch</a>
+                  <a href="">Dinner</a>
+                  <a href="">Dessert</a>
+                  <a href="">Non American</a>
+                </div>
+                </div>
+                  </li>
+              <li><a href=#section-one>Jump To Recipes</a></li>
             </ul>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Create a recommendation to add more here babe</h3>
-            <ul>
-              <li>If you want something here babe then create a recommendation</li>
-            </ul>
+        </div>
+        
+        <div id="header-bottom">
+          <div id="bottom-left">
+            <div id="header-bottom-header">HI, I'm Olga Kim "Drew"</div>
+            <div id="header-bottom-section">My cooking expertise spans 2 decades with a specialty in korean, kyrgyz, Russian and general bakery.
+            </div>
+            <!--<div id="header-bottom-button">
+              <button id="header-button" type="button">submit</button>
+            </div>-->
           </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Babe, add you recommendations here</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          This is what it will look like
-	  <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          This is the recommendations and review page
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Recommendations page
-          <span>&#8221;</span>
+          <div id="bottom-right">
+            <div id="header-bottom-img">
+              <img id="cover-photo"src="./images/face_pic2.jpg" alt="pic of olady" height=auto width=400>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+      
+      <div id="content">
+        <div id="section-one">
+          <div class="content-title">RECIPES FOR ANY OCCASION
           </div>
-        </fieldset>
+          <div id="recipe-section">
+            
+            <div class="recipe"> <a class="recipe-link" href="./recipes/sweet_potato_pie/index.html"><img class="recipe-image" 
+              src="https://images.pexels.com/photos/5662097/pexels-photo-5662097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sweet potatoe pie" height="300" 
+              width="400">Sweet Potatoe Pie</a>
+            </div>
+            <div class="recipe">
+              <a class="recipe-link" href=""><img class="recipe-image" src="https://cdn.pixabay.com/photo/2017/04/04/17/39/food-2202401_1280.jpg" alt="berry filled pop-tart" height="300" width="400">Homemade Pop Tarts</a>
+            </div>
+            <div class="recipe">
+              <a class="recipe-link" href=""><img class="recipe-image" src="https://cdn.pixabay.com/photo/2016/06/10/17/34/black-eyed-susan-1448556_960_720.jpg" alt="bowl of black eyed peas" height="300" width="400">
+              Black Eyed Peas with Smoked Neckbones</a>
+            </div>
+            <div class="recipe">
+              <a class="recipe-link" href=""><img class="recipe-image" src="https://cdn.pixabay.com/photo/2017/11/09/13/23/food-2933528_960_720.jpg" alt="Garlic Naan" height="300" width="400">
+              Indian Style Garlic Naan</a>
+            </div>
+            <div class="recipe">
+              <a class="recipe-link" href=""><img class="recipe-image" src="https://cdn.pixabay.com/photo/2022/11/24/18/09/butter-chicken-7614835_1280.jpg" alt="Butter Chicken" height="300" width="400">
+              Butter Chicken</a>
+            </div>
+            <div class="recipe">
+              <a class="recipe-link" href=""><img class="recipe-image" src="https://cdn.pixabay.com/photo/2020/03/29/13/44/bolognese-4980807_960_720.jpg" alt="Bolognese Sauce" height="300" width="400">
+              Bolognese Sauce</a>
+            </div>
+          </div>
+        </div>
+        
+        <div id="section-two">
+          <div class="content-title">Interested in Korean cuisine?? Take a look at my youtube channel
+          </div>
+          <div id="video-section">
+            <iframe src="https://www.youtube.com/watch?v=r1TZbu8Xmsk&t=19s" height="400" width="400" title="Korean Cuisine"></iframe>
+            <iframe src="https://www.youtube.com/watch?v=UqZwMrh8dxY" height="400" width="400" title="Korean Cuisine"></iframe>
+            <iframe src="https://www.youtube.com/shorts/Q05BvncrHSc" height="400" width="400" title="Korean Cuisine"></iframe>
+            <iframe src="https://www.youtube.com/shorts/Q05BvncrHSc" height="400" width="400" title="Korean Cuisine"></iframe>
+          </div>
+        </div>
+        
+        <div id="section-three">
+          <div class="content-title">Кимчигрызка</div>
+          <div id="youtube">
+            <a href="https://www.youtube.com/@kimchigryzka"><img id="youtube-photo" src="./images/face_pic.jpg" alt="Picture of Youtuber" height="300" width="400"></a>
+          </div>
+          <div class="content-title">kimchigryzka</div>
+        </div>
       </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>I'll get on it!!</h3>
-      <button onclick="showPopup(false)">Ok</button>
+      
+      <div id="footer">Still figuring out what to put here?<img src="https://cdn.pixabay.com/photo/2020/09/20/11/24/ball-5586847_1280.jpg" alt="fustrated emoji" height="300" width="400">
+      </div>
     </div>
   </body>
 </html>
