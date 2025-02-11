@@ -94,3 +94,152 @@
 <button class="toggle-button" id="language-toggle" data-key="button">Switch to Russian</button>
 </body>
 </html>
+
+<!----------JAVASCRIPT CODE----------->
+<script>
+// Translation data for English and Russian
+const translations = {
+    en: {
+        home: "Home",
+        jump: "Jump to Recipe",
+        projects: "Projects",
+        about: "About Me",
+        covertitle: "Babe's Sweet Potato Pie",
+        est: "Estimated Cook Time",
+        prep: "Preparation",
+        preptime: "1 hour",
+        cook: "Cooking Time",
+        cooktime: "2 hours",
+        add: "Additional Time",
+        addtime: "10 min",
+        total: "Total Time",
+        totaltime: "3 hours & 10 min",
+        para: "Sweet potato pie is a southern classic dessert that is popular both at the holiday table and any time you want a slice of sweet, light comfort. Here is how to make the holiday favorite of the Drew household.",
+        ingredientstitle: "INGREDIENTS",
+        instructtitle: "INSTRUCTIONS",
+        material: [
+            "1 cup (142g) unbleached all-purpose flour",
+            "1/4 tsp Salt",
+            "3-5 Tsp ice water",
+            "3/4 cup (150g) packed light brown sugar",
+            "1.5 lbs (24oz) Sweet potatoes: (about 3 medium)",
+            "6 Tbsp (85g) Salted butter: unsalted butter is fine also.",
+            "2 tsp (8g) Granulated Sugar",
+            "2 large eggs",
+            "1 (5oz) can of evaporated milk",
+            "1/2 tsp ground cinnamon",
+            "1/2 tsp ground nutmeg",
+            "1/4 tsp ground ginger",
+            "1 tsp vanilla extract"
+        ],
+        instructions: [
+            "<b>To make crust:</b> In a medium mixing bowl whisk together 1 cup flour, 2 tsp sugar and heaping 1/4 tsp salt. Add butter and cut into mixture using a pastry blender until there are just small pea size clumps of butter throughout.",
+            "Add ice water 1 Tbsp at a time and toss until mixture is just moistened and comes together in bigger clumps.",
+            "Remove dough, roll out into a 12-inch round on a lightly floured surface.",
+            "Refrigerate until well chilled about 1 hour or freeze for 15 minutes. Meanwhile preheat oven to 400 degrees.",
+            "Line crust with a sheet of foil or parchment paper (cover to edges), add dry beans, rice, sugar or pie weights to fill just level to the top.",
+            "Bake pie in preheated oven 15 minutes. Remove crust and let cool on a wire rack."
+        ],
+        second: [
+            "<b>To bake sweet potatoes:</b> Prick sweet potatoes once on each side with a fork. Wrap each potato individually in foil. Place on a baking sheet.",
+            "Bake in a 400-degree oven until very soft, about 50-60 minutes."
+        ],
+        third: [
+            "<b>To brown butter:</b> Add butter to a skillet over medium heat. Cook, stirring occasionally, until butter has a nutty smell and light brown flecks."
+        ],
+        fourth: [
+            "<b>To make sweet potato pie filling:</b> Heat oven to 350 degrees. Halve sweet potatoes, scoop out flesh, and mash until smooth.",
+            "Add browned butter, evaporated milk, brown sugar, eggs, cinnamon, nutmeg, ginger, salt, and vanilla. Blend until combined.",
+            "Pour mixture into prepared pie crust. Bake in a preheated oven for 40-50 minutes. Let cool on a wire rack for 2 hours."
+        ],
+        button: "Switch to Russian"
+    },
+    ru: {
+        home: "Домой",
+        jump: "Перейти к рецепту",
+        projects: "Проекты",
+        about: "Обо мне",
+        covertitle: "Сладкий картофельный пирог Бэйба",
+        est: "Примерное время приготовления",
+        prep: "Подготовка",
+        preptime: "1 час",
+        cook: "Время готовки",
+        cooktime: "2 часа",
+        add: "Дополнительное время",
+        addtime: "10 минут",
+        total: "Общее время",
+        totaltime: "3 часа и 10 минут",
+        para: "Сладкий картофельный пирог — это классический южный десерт, который популярен как на праздничном столе, так и в любое время.",
+        ingredientstitle: "ИНГРЕДИЕНТЫ",
+        instructtitle: "ИНСТРУКЦИИ",
+        material: [
+            "1 стакан (142г) неотбеленной муки",
+            "1/4 ч.л. соли",
+            "3-5 ч.л. ледяной воды",
+            "3/4 стакана (150г) светлого коричневого сахара",
+            "1,5 фунта (24 унции) сладкого картофеля (примерно 3 средних)",
+            "6 ст.л. (85г) соленого масла",
+            "2 ч.л. (8г) сахара",
+            "2 больших яйца",
+            "1 банка (5 унций) сгущенного молока",
+            "1/2 ч.л. молотой корицы",
+            "1/2 ч.л. молотого мускатного ореха",
+            "1/4 ч.л. молотого имбиря",
+            "1 ч.л. ванильного экстракта"
+        ],
+        instructions: [
+            "<b>Для корочки:</b> В миске смешайте 1 чашку муки, 2 ч.л. сахара и 1/4 ч.л. соли.",
+            "Добавьте ледяную воду по 1 ст. л. за раз.",
+            "Раскатайте тесто в круг диаметром 12 дюймов. Охладите 1 час.",
+            "Предварительно разогрейте духовку до 400 градусов.",
+            "Выложите корочку фольгой. Добавьте груз для выпечки.",
+            "Выпекайте пирог в разогретой духовке 15 минут."
+        ],
+        second: [
+            "<b>Для выпечки сладкого картофеля:</b> Прокалите картофель вилкой, заверните в фольгу.",
+            "Выпекайте в духовке при 400 градусах 50–60 минут."
+        ],
+        third: [
+            "<b>Для поджаривания масла:</b> Растопите масло на среднем огне, пока не появится ореховый запах."
+        ],
+        fourth: [
+            "<b>Для начинки:</b> Переложите сладкий картофель в миску и размять до однородности.",
+            "Добавьте масло, сгущенное молоко, сахар, яйца, корицу, мускатный орех, имбирь, соль и ваниль. Смешайте.",
+            "Вылейте смесь в форму для пирога. Выпекайте 40–50 минут. Охладите."
+        ],
+        button: "Переключиться на английский"
+    }
+};
+
+// Current language state
+let currentLanguage = "en";
+
+// Function to update content dynamically
+function updateContent(language) {
+    document.querySelectorAll("[data-key]").forEach((element) => {
+        const key = element.getAttribute("data-key");
+
+        if (Array.isArray(translations[language][key])) {
+            // Clear existing list items
+            element.innerHTML = "";
+            translations[language][key].forEach((item) => {
+                const li = document.createElement("li");
+                li.innerHTML = item; // Use innerHTML for bold text
+                element.appendChild(li);
+            });
+        } else {
+            // Update text content
+            element.innerHTML = translations[language][key];
+        }
+    });
+}
+
+// Event listener for the language toggle button
+document.getElementById("language-toggle").addEventListener("click", () => {
+    currentLanguage = currentLanguage === "en" ? "ru" : "en";
+    updateContent(currentLanguage);
+});
+
+// Initial load
+updateContent(currentLanguage);
+</script>
