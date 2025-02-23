@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Potatoe Pie</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+<div class="header">
+<div id="logo">
+<img id="logo" src="https://media.istockphoto.com/id/1069231126/vector/kitchen-kitchenware-saucepan-fork-and-spoon-icon-design-cooking-eat-food-and-restaurant.jpg?s=1024x1024&w=is&k=20&c=5KekMnj1TQrPskinSWU8eAKy6b9th6wFTjmXHQ1mLvE=" alt="Picture of fork and pot" height="auto" width="200">
+</div>
+  
+<div class="topdiv">
+<a class="topmenu" data-key="home" href="./index.html">Home</a>
+<a class="topmenu" data-key="jump" href="#ingredients">Jump to Recipe</a>
+<a class="topmenu" data-key="projects" href="#projects">Projects</a>
+a class="topmenu" data-key= "about" href="#recommendation">About Me</a>
+</div>
+</div>
+      
+<div class="cover">
+<div class="cover-subcontainer-left">
+<div id="cover-title" data-key="covertitle">Babe's Sweet Potato Pie </div> 
+        <!-- do not need to specify 'px' when listing img size --> 
+<img id="cover-photo" src="https://media.istockphoto.com/id/613034960/pl/zdj%C4%99cie/domowe-%C5%9Bwi%C4%85teczne-s%C5%82odkie-ciasto-ziemniaczane.jpg?s=1024x1024&w=is&k=20&c=MshJSGzU0J6VrWXgd9YJ0ukyhAa46cPqbIZKaFMFg6Y=" alt="Fancy photo of a well prepared sweet potato pie" height="300" width="400">  
+</div>
+  
+<div class="cover-subcontainer-right">
+          <!-- close out h2 heading--> 
+<div id="cook-time">
+<div id="cook-time-title" data-key="est">Estimated Cook Time
+</div>
+  
+<div id="cook-times">
+<div class="prep-time">
+<div class="cook-time-stage" data-key="prep">Preparation</div>
+<div class="time-allotment" data-key="preptime">1 hour</div>
+</div>
+<div class="prep-time">
+<div class="cook-time-stage" data-key="cook">Cooking Time</div>
+<div class="time-allotment" data-key="cooktime">2 hours</div>
+</div>
+<div class="prep-time">
+<div class="cook-time-stage" data-key="add">Additional Time</div>
+<div class="time-allotment" data-key="addtime">10 min</div>
+</div>
+<div class="prep-time">
+<div class="cook-time-stage" data-key="total">Total Time</div>
+<div class="time-allotment" data-key="totaltime">3 hours & 10 min</div>
+</div>
+</div>
+</div>
+  
+<div id="cover-paragraph" data-key="para"> Sweet potato pie is a southern classic dessert that is popular both at the holiday table and any time you want a slice of sweet, light comfort. Here is how to make the holiday favorite of the Drew household</div>
+</div>
+</div>
+
+  
+<div class="how-to-make">
+<div id="ingredients">
+<div class="section-title" data-key="ingredientstitle">INGREDIENTS</div>
+<ul id="ingredients-list" data-key="material"></ul>
+</div>
+  
+<div id="instructions">		
+<div class="section-title" data-key="instructtitle">INSTRUCTIONS</div>
+<!-- do not need to specify 'px' when listing img size
+<img> cannot be child of ol element -->
+  
+<div class="list-step">
+<img class="photo-pie" src ="https://media.istockphoto.com/id/653805106/pl/zdj%C4%99cie/surowe-ciasto-z-wa%C5%82kiem-do-ciasta-i-m%C4%85k%C4%85.jpg?s=1024x1024&w=is&k=20&c=kdlGk0mrg__BY0QJ_8ERK4skWnZuNLrvK2yj0Evrs6Y=" alt = "Crust when finished" height = "auto" width = "300">
+<ol class="how-to-make-list" data-key="instructions"></ol>
+</div>
+
+<div class="list-step">
+<!-- do not need to specify 'px' when listing img size -->
+<img class="photo-pie" src = "https://media.istockphoto.com/id/184293069/pl/zdj%C4%99cie/t%C5%82uczone-ziemniaki-s%C5%82odkie-%C5%9Bwi%C4%99to-dzi%C4%99kczynienia-ignamy.jpg?s=1024x1024&w=is&k=20&c=i-ekekAGMqq_RWsbjf4b8dHXFfdTOZdcrObJsXTVqjc=" alt = "Picture of mashed sweet potato" height = "auto" width = "300">
+<ol class="how-to-make-list" data-key="second"></ol>
+</div>
+
+<div class="list-step"><ol class="how-to-make-list" data-key="third"></ol>
+</div>
+  
+<div class="list-step"><ol class="how-to-make-list" data-key="fourth"></ol>
+</div>
+</div>
+</div>
+<!--<div id="footer">
+        
+</div>-->
+<button class="toggle-button" id="language-toggle" data-key="button">Switch to Russian</button>
+</body>
+</html>
+
+<!----------JAVASCRIPT CODE----------->
+<script>
+// Translation data for English and Russian
+const translations = {
+    en: {
+        home: "Home",
+        jump: "Jump to Recipe",
+        projects: "Projects",
+        about: "About Me",
+        covertitle: "Babe's Sweet Potato Pie",
+        est: "Estimated Cook Time",
+        prep: "Preparation",
+        preptime: "1 hour",
+        cook: "Cooking Time",
+        cooktime: "2 hours",
+        add: "Additional Time",
+        addtime: "10 min",
+        total: "Total Time",
+        totaltime: "3 hours & 10 min",
+        para: "Sweet potato pie is a southern classic dessert that is popular both at the holiday table and any time you want a slice of sweet, light comfort. Here is how to make the holiday favorite of the Drew household.",
+        ingredientstitle: "INGREDIENTS",
+        instructtitle: "INSTRUCTIONS",
+        material: [
+            "1 cup (142g) unbleached all-purpose flour",
+            "1/4 tsp Salt",
+            "3-5 Tsp ice water",
+            "3/4 cup (150g) packed light brown sugar",
+            "1.5 lbs (24oz) Sweet potatoes: (about 3 medium)",
+            "6 Tbsp (85g) Salted butter: unsalted butter is fine also.",
+            "2 tsp (8g) Granulated Sugar",
+            "2 large eggs",
+            "1 (5oz) can of evaporated milk",
+            "1/2 tsp ground cinnamon",
+            "1/2 tsp ground nutmeg",
+            "1/4 tsp ground ginger",
+            "1 tsp vanilla extract"
+        ],
+        instructions: [
+            "<b>To make crust:</b> In a medium mixing bowl whisk together 1 cup flour, 2 tsp sugar and heaping 1/4 tsp salt. Add butter and cut into mixture using a pastry blender until there are just small pea size clumps of butter throughout.",
+            "Add ice water 1 Tbsp at a time and toss until mixture is just moistened and comes together in bigger clumps.",
+            "Remove dough, roll out into a 12-inch round on a lightly floured surface.",
+            "Refrigerate until well chilled about 1 hour or freeze for 15 minutes. Meanwhile preheat oven to 400 degrees.",
+            "Line crust with a sheet of foil or parchment paper (cover to edges), add dry beans, rice, sugar or pie weights to fill just level to the top.",
+            "Bake pie in preheated oven 15 minutes. Remove crust and let cool on a wire rack."
+        ],
+        second: [
+            "<b>To bake sweet potatoes:</b> Prick sweet potatoes once on each side with a fork. Wrap each potato individually in foil. Place on a baking sheet.",
+            "Bake in a 400-degree oven until very soft, about 50-60 minutes."
+        ],
+        third: [
+            "<b>To brown butter:</b> Add butter to a skillet over medium heat. Cook, stirring occasionally, until butter has a nutty smell and light brown flecks."
+        ],
+        fourth: [
+            "<b>To make sweet potato pie filling:</b> Heat oven to 350 degrees. Halve sweet potatoes, scoop out flesh, and mash until smooth.",
+            "Add browned butter, evaporated milk, brown sugar, eggs, cinnamon, nutmeg, ginger, salt, and vanilla. Blend until combined.",
+            "Pour mixture into prepared pie crust. Bake in a preheated oven for 40-50 minutes. Let cool on a wire rack for 2 hours."
+        ],
+        button: "Switch to Russian"
+    },
+    ru: {
+        home: "Домой",
+        jump: "Перейти к рецепту",
+        projects: "Проекты",
+        about: "Обо мне",
+        covertitle: "Сладкий картофельный пирог Бэйба",
+        est: "Примерное время приготовления",
+        prep: "Подготовка",
+        preptime: "1 час",
+        cook: "Время готовки",
+        cooktime: "2 часа",
+        add: "Дополнительное время",
+        addtime: "10 минут",
+        total: "Общее время",
+        totaltime: "3 часа и 10 минут",
+        para: "Сладкий картофельный пирог — это классический южный десерт, который популярен как на праздничном столе, так и в любое время.",
+        ingredientstitle: "ИНГРЕДИЕНТЫ",
+        instructtitle: "ИНСТРУКЦИИ",
+        material: [
+            "1 стакан (142г) неотбеленной муки",
+            "1/4 ч.л. соли",
+            "3-5 ч.л. ледяной воды",
+            "3/4 стакана (150г) светлого коричневого сахара",
+            "1,5 фунта (24 унции) сладкого картофеля (примерно 3 средних)",
+            "6 ст.л. (85г) соленого масла",
+            "2 ч.л. (8г) сахара",
+            "2 больших яйца",
+            "1 банка (5 унций) сгущенного молока",
+            "1/2 ч.л. молотой корицы",
+            "1/2 ч.л. молотого мускатного ореха",
+            "1/4 ч.л. молотого имбиря",
+            "1 ч.л. ванильного экстракта"
+        ],
+        instructions: [
+            "<b>Для корочки:</b> В миске смешайте 1 чашку муки, 2 ч.л. сахара и 1/4 ч.л. соли.",
+            "Добавьте ледяную воду по 1 ст. л. за раз.",
+            "Раскатайте тесто в круг диаметром 12 дюймов. Охладите 1 час.",
+            "Предварительно разогрейте духовку до 400 градусов.",
+            "Выложите корочку фольгой. Добавьте груз для выпечки.",
+            "Выпекайте пирог в разогретой духовке 15 минут."
+        ],
+        second: [
+            "<b>Для выпечки сладкого картофеля:</b> Прокалите картофель вилкой, заверните в фольгу.",
+            "Выпекайте в духовке при 400 градусах 50–60 минут."
+        ],
+        third: [
+            "<b>Для поджаривания масла:</b> Растопите масло на среднем огне, пока не появится ореховый запах."
+        ],
+        fourth: [
+            "<b>Для начинки:</b> Переложите сладкий картофель в миску и размять до однородности.",
+            "Добавьте масло, сгущенное молоко, сахар, яйца, корицу, мускатный орех, имбирь, соль и ваниль. Смешайте.",
+            "Вылейте смесь в форму для пирога. Выпекайте 40–50 минут. Охладите."
+        ],
+        button: "Переключиться на английский"
+    }
+};
+
+// Current language state
+let currentLanguage = "en";
+
+// Function to update content dynamically
+function updateContent(language) {
+    document.querySelectorAll("[data-key]").forEach((element) => {
+        const key = element.getAttribute("data-key");
+
+        if (Array.isArray(translations[language][key])) {
+            // Clear existing list items
+            element.innerHTML = "";
+            translations[language][key].forEach((item) => {
+                const li = document.createElement("li");
+                li.innerHTML = item; // Use innerHTML for bold text
+                element.appendChild(li);
+            });
+        } else {
+            // Update text content
+            element.innerHTML = translations[language][key];
+        }
+    });
+}
+
+// Event listener for the language toggle button
+document.getElementById("language-toggle").addEventListener("click", () => {
+    currentLanguage = currentLanguage === "en" ? "ru" : "en";
+    updateContent(currentLanguage);
+});
+
+// Initial load
+updateContent(currentLanguage);
+</script>
