@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="sytlesheet" src="./styles.css">
+</head>
+<body>
+  
+<div class="header">
+<div id="logo">
+<img id="logo" src="https://media.istockphoto.com/id/1069231126/vector/kitchen-kitchenware-saucepan-fork-and-spoon-icon-design-cooking-eat-food-and-restaurant.jpg?s=1024x1024&w=is&k=20&c=5KekMnj1TQrPskinSWU8eAKy6b9th6wFTjmXHQ1mLvE=" alt="Picture of fork and pot" height="auto" width="200">
+</div>
+  
+<div class="topdiv">
+<a class="topmenu" data-key="home" href="./index.html">Home</a>
+<a class="topmenu" data-key="jump" href="#ingredients">Jump to Recipe</a>
+<a class="topmenu" data-key="projects" href="#projects">Projects</a>
+<a class="topmenu" data-key= "about" href="#recommendation">About Me</a>
+</div>
+</div>
+      
+<div class="cover">
+<div class="cover-subcontainer-left">
+<div id="cover-title" data-key="covertitle"></div> 
+        <!-- do not need to specify 'px' when listing img size --> 
+<img id="cover-photo" src="https://media.istockphoto.com/id/613034960/pl/zdj%C4%99cie/domowe-%C5%9Bwi%C4%85teczne-s%C5%82odkie-ciasto-ziemniaczane.jpg?s=1024x1024&w=is&k=20&c=MshJSGzU0J6VrWXgd9YJ0ukyhAa46cPqbIZKaFMFg6Y=" alt="Fancy photo of a well prepared sweet potato pie" height="300" width="400">  
+</div>
+  
+<div class="cover-subcontainer-right">
+          <!-- close out h2 heading--> 
+<div id="cook-time">
+<div id="cook-time-title" data-key="est">Estimated Cook Time
+</div>
+  
+<div id="cook-times">
+<div class="prep-time">
+<div class="cook-time-stage" data-key="prep">Preparation</div>
+<div class="time-allotment" data-key="preptime"></div>
+</div>
+<div class="prep-time">
+<div class="cook-time-stage" data-key="cook">Cooking Time</div>
+<div class="time-allotment" data-key="cooktime"></div>
+</div>
+<div class="prep-time">
+<div class="cook-time-stage" data-key="add">Additional Time</div>
+<div class="time-allotment" data-key="addtime"></div>
+</div>
+<div class="prep-time">
+<div class="cook-time-stage" data-key="total">Total Time</div>
+<div class="time-allotment" data-key="totaltime"></div>
+</div>
+</div>
+</div>
+  
+<div id="cover-paragraph" data-key="para"> </div>
+</div>
+</div>
+
+  
+<div class="how-to-make">
+<div id="ingredients">
+<div class="section-title" data-key="ingredientstitle"></div>
+<ul id="ingredients-list" data-key="material"></ul>
+</div>
+  
+<div id="instructions">		
+<div class="section-title" data-key="instructtitle">INSTRUCTIONS</div>
+<!-- do not need to specify 'px' when listing img size
+<img> cannot be child of ol element -->
+  
+<div class="list-step">
+<img class="photo-pie" src ="https://media.istockphoto.com/id/653805106/pl/zdj%C4%99cie/surowe-ciasto-z-wa%C5%82kiem-do-ciasta-i-m%C4%85k%C4%85.jpg?s=1024x1024&w=is&k=20&c=kdlGk0mrg__BY0QJ_8ERK4skWnZuNLrvK2yj0Evrs6Y=" alt = "Crust when finished" height = "auto" width = "300">
+<ol class="how-to-make-list" data-key="instructions"></ol>
+</div>
+
+<div class="list-step">
+<!-- do not need to specify 'px' when listing img size -->
+<img class="photo-pie" src = "https://media.istockphoto.com/id/184293069/pl/zdj%C4%99cie/t%C5%82uczone-ziemniaki-s%C5%82odkie-%C5%9Bwi%C4%99to-dzi%C4%99kczynienia-ignamy.jpg?s=1024x1024&w=is&k=20&c=i-ekekAGMqq_RWsbjf4b8dHXFfdTOZdcrObJsXTVqjc=" alt = "Picture of mashed sweet potato" height = "auto" width = "300">
+<ol class="how-to-make-list" data-key="second"></ol>
+</div>
+
+<div class="list-step"><ol class="how-to-make-list" data-key="third"></ol>
+</div>
+  
+<div class="list-step"><ol class="how-to-make-list" data-key="fourth"></ol>
+</div>
+  
+<div class="list-step"><ol class="how-to-make-list" data-key="fifth"></ol>
+</div>
+  
+<div class="list-step"><ol class="how-to-make-list" data-key="sixth"></ol>
+</div>
+</div>
+</div>
+<!--<div id="footer">
+        
+</div>-->
+<button class="toggle-button" id="language-toggle" data-key="button">Switch to Russian</button>
+</body>
+</html>
+
+<script>
+// Translation data for English and Russian
+const translations = {
+    en: {
+        home: "Home",
+        jump: "Jump to Recipe",
+        projects: "Projects",
+        about: "About Me",
+        covertitle: "Lasagna",
+        est: "Estimated Cook Time",
+        prep: "Prep",
+        preptime: "30 min",
+        cook: "Cooking Time",
+        cooktime: "50 min",
+        add: "Rest Time",
+        addtime: "30 min",
+        total: "Total Time",
+        totaltime: "1 hour & 20 min",
+        para: "Lasagna is a classic Italian dish known for its rich layers of pasta, savory meat or vegetable filling, creamy béchamel or ricotta cheese, and tangy tomato sauce, all baked to perfection with a golden, bubbly layer of melted cheese on top. Originating from Italy, this hearty and comforting meal has become a beloved favorite worldwide, with countless variations to suit different tastes and dietary preferences. Whether enjoyed as a homemade family dinner or a special occasion dish, lasagna delivers a delicious blend of flavors and textures in every bite.",
+        ingredientstitle: "INGREDIENTS",
+        instructtitle: "INSTRUCTIONS",
+        material: [
+                        "<b>Ingredients for Lasagna:</b><br>1 lb ground beef, (15-20% fat content)",
+            "1 medium onion, finely diced",
+            "2 large garlic cloves, minced",
+            "1/4 cup dry red wine, or beef broth",
+            "1 Tbsp olive oil",
+            "3 cups of Marinara Sauce",
+            "1/4 tsp black pepper",
+            "1/2 tsp sea salt",
+            "1/4 tsp dried thyme",
+            "2 Tbsp of finely chopped parsley",
+            "1/2 tsp granulated sugar",
+            "3 cups of flour",
+            "5 large eggs",
+            "3 Medium Carrots",
+            "3 stems of celery",
+            
+            "<b>Ingredients for Cheese Sauce:</b><br>4 cups of shredded mozzarella cheese",
+            "2 Tbsp parsley, finely chopped",
+            "1 large egg",
+            "15 oz reduced fat ricotta cheese",
+            "Add 1 cup of shredded Parmesan",
+            
+            "<b>Ingredients For Bechamel:</b><br> 2.5 cups of milk", 
+            "4 tablespoons of butter", 
+            "1/4 cup of flour",
+            "2.5 cups of whole milk",
+            "4 tablespoons of unsalted butter",
+            "Add 1 cup of shredded Parmesan"
+        ],
+      
+        instructions: [
+            "<b>How to make Meat Sauce:</b> Place a deep pan or dutch oven over medium/high heat and add 1 Tbsp olive oil, 1 lb ground beef, carrots, celery. Saute, breaking up the meat, for 5 minutes or until beef is browned.",
+            "Add 1/4 cup wine and stir for 2 minutes or until wine is nearly evaporated. Add 3 cups marinara, 1/2 tsp salt, 1/4 tsp pepper, 1/4 tsp thyme, 1/2 tsp sugar and 2 Tbsp parsley. Bring to a simmer then cover and cook 5 minutes."
+        ],
+      
+        second: [
+          "<b>How To Make Bechamel:</b>Whisk flour and milk while cold, on medium heat add butter, whisk until the butter melts and the sauce thickens (~15 min). Add salt and black pepper to taste"
+        ],
+      
+        third: [
+            "<b>Hommade Lasagna Noodle:</b> Knead 3.5 cups of flour, 1/2 tsp of salt and 5 eggs and let sit in the refrigerator for 1 hour. Once ready, roll knead into 3 lasagna sheets"
+        ],
+      
+        fourth: [
+            "<b>How To Make Cheese Sauce:</b> In a large mixing bowl, combine 16 oz Cottage Cheese, 15 oz Ricotta, 1 cup mozzarella, 1 egg and 2 Tbsp parsley. (reserve the rest for later)"
+        ],
+      
+        fifth: [
+            "<b>How To Make Lasagna:</b> Preheat your oven to 375ºF and cook the lasagna noodles in a pot of well-salted water until al dente, then drain and pour in cold water to stop the cooking process and prevent sticking.",
+            "Spread 1/2 cup of the meat sauce on the bottom of a 9×13-inch casserole dish. Add 3 noodles, followed by 1/3 of the meat sauce, 1 cup of mozzarella, and half of the ricotta mixture. Repeat, then for the top layer, add 3 noodles, 1/3 of the meat sauce, and the remaining mozzarella.",
+          "Poke 9-12 toothpicks over the surface of your lasagna (to keep the foil from sticking to the cheese). Cover with foil and bake at 375˚F for 45 minutes. ",
+            "Cover with aluminum foil and bake at 375˚F for 45 minutes, then remove the foil and broil for 3 to 5 minutes, or until the cheese is lightly browned.",
+          "Let the lasagna rest for about 30 minutes before cutting and serving"
+        ],
+      
+        sixth: [
+          "<b>Assembly:</b>",
+          "meat sauce on the bottom",
+          "Lasagna sheet",
+          "Meat sauce",
+          "Bechamel",
+          "Cheese mix",
+          "Repeat 2 more times"
+      ],
+      
+        button: "Switch to Russian"
+    },
+    ru: {
+        home: "Главная",
+        jump: "Перейти к рецепту",
+        projects: "Проекты",
+        about: "Обо мне",
+        covertitle: "Лазанья",
+        est: "Ожидаемое время приготовления",
+        prep: "Подготовка",
+        preptime: "30 мин",
+        cook: "Время готовки",
+        cooktime: "50 мин",
+        add: "Время на отдых",
+        addtime: "30 мин",
+        total: "Общее время",
+        totaltime: "1 час 20 мин",
+        para: "Лазанья — это классическое итальянское блюдо, известное своими богатыми слоями пасты, пикантной мясной или овощной начинкой, кремовой бешамелью или рикоттой и острым томатным соусом, все запеченные до совершенства с золотистой, пузырящейся корочкой расплавленного сыра сверху. Происходящее из Италии, это сытное и уютное блюдо стало любимым во всем мире, с множеством вариаций, чтобы удовлетворить различные вкусы и диетические предпочтения. Будь то домашний семейный ужин или блюдо на особый случай, лазанья дарит вкусное сочетание вкусов и текстур в каждом укусе.",
+        ingredientstitle: "ИНГРЕДИЕНТЫ",
+        instructtitle: "ИНСТРУКЦИИ",
+        material: [
+            "<b>Ингредиенты для лазаньи:</b><br>450 г говяжьего фарша (с содержанием жира 15-20%)",
+        "1 средняя луковица, мелко нарезанная",
+        "2 большие зубчика чеснока, измельченные",
+        "1/4 стакана сухого красного вина или бульона",
+        "1 ст. ложка оливкового масла",
+        "3 стакана маринара соуса",
+        "1/4 ч. ложки черного перца",
+        "1/2 ч. ложки морской соли",
+        "1/4 ч. ложки сушеного тимьяна",
+        "2 ст. ложки мелко нарезанной петрушки",
+        "1/2 ч. ложки сахара",
+        "3 стакана муки",
+        "5 крупных яиц",
+        "3 средние моркови",
+        "3 стебля сельдерея",
+
+        "<b>Ингредиенты для сырного соуса:</b><br>4 стакана натертого моцареллы",
+        "2 ст. ложки петрушки, мелко нарезанной",
+        "1 крупное яйцо",
+        "425 г обезжиренной рикотты",
+        "Добавьте 1 стакан натертого пармезана",
+
+        "<b>Ингредиенты для бешамеля:</b><br>2,5 стакана молока",
+        "4 столовые ложки сливочного масла",
+        "1/4 стакана муки",
+        "2,5 стакана цельного молока",
+        "4 столовые ложки несоленого масла",
+        "Добавьте 1 стакан натертого пармезана"
+        ],
+        instructions: [
+           "<b>Как приготовить мясной соус:</b> Поставьте глубокую сковороду или кастрюлю на средний/высокий огонь, добавьте 1 ст. ложку оливкового масла, 450 г говяжьего фарша, морковь, сельдерей. Обжаривайте, разминая мясо, 5 минут или до тех пор, пока мясо не подрумянится.",
+        "Добавьте 1/4 стакана вина и помешивайте 2 минуты или до тех пор, пока вино почти не испарится. Добавьте 3 стакана маринара, 1/2 ч. ложки соли, 1/4 ч. ложки перца, 1/4 ч. ложки тимьяна, 1/2 ч. ложки сахара и 2 ст. ложки петрушки. Доведите до кипения, затем накройте крышкой и готовьте 5 минут."
+        ],
+        second: [
+            "<b>Как приготовить бешамель:</b> Взбейте муку и молоко на холоде, на среднем огне добавьте масло, взбивайте до тех пор, пока масло не растает и соус не загустеет (~15 мин). Добавьте соль и черный перец по вкусу."
+        ],
+        third: [
+            "<b>Домашние лапши для лазаньи:</b> Замесите 3,5 стакана муки, 1/2 ч. ложки соли и 5 яиц и оставьте в холодильнике на 1 час. Когда готово, раскатайте тесто в 3 листа лазаньи."
+        ],
+        fourth: [
+            "<b>Как приготовить сырный соус:</b> В большой миске смешайте 450 г творога, 425 г рикотты, 1 стакан моцареллы, 1 яйцо и 2 ст. ложки петрушки. (Оставьте остальное на потом)."
+        ],
+        fifth: [
+          "<b>Как приготовить лазанью:</b> Разогрейте духовку до 190ºC и отварите листы лазаньи в кастрюле с хорошо подсоленной водой до состояния аль денте, затем слейте воду и полейте холодной водой, чтобы остановить процесс готовки и предотвратить прилипание.",
+        "На дно формы для запеканки 9×13 дюймов положите 1/2 стакана мясного соуса. Добавьте 3 листа лазаньи, затем 1/3 мясного соуса, 1 стакан моцареллы и половину смеси рикотты. Повторите, а для верхнего слоя добавьте 3 листа лазаньи, 1/3 мясного соуса и оставшуюся моцареллу.",
+        "Наколите 9-12 зубочисток по поверхности лазаньи (чтобы фольга не прилипала к сыру). Накройте фольгой и запекайте при 190˚C в течение 45 минут.",
+        "Накройте фольгой и запекайте при 190˚C в течение 45 минут, затем снимите фольгу и запекайте еще 3-5 минут или до тех пор, пока сыр не станет слегка коричневым.",
+        "Дайте лазанье отдохнуть около 30 минут перед нарезанием и подачей."
+        ],
+      sixth: [
+         "<b>Сборка:</b>",
+        "мясной соус на дно",
+        "Лист лазаньи",
+        "Мясной соус",
+        "Бешамель",
+        "Сырная смесь",
+        "Повторить еще 2 раза"
+      ],
+        button: "Переключиться на английский"
+    }
+};
+
+// Current language state
+let currentLanguage = "en";
+
+// Function to update content dynamically
+function updateContent(language) {
+    document.querySelectorAll("[data-key]").forEach((element) => {
+        const key = element.getAttribute("data-key");
+
+        if (Array.isArray(translations[language][key])) {
+            // Clear existing list items
+            element.innerHTML = "";
+            translations[language][key].forEach((item) => {
+                const li = document.createElement("li");
+                li.innerHTML = item; // Use innerHTML for bold text
+                element.appendChild(li);
+            });
+        } else {
+            // Update text content
+            element.innerHTML = translations[language][key];
+        }
+    });
+}
+
+// Event listener for the language toggle button
+document.getElementById("language-toggle").addEventListener("click", () => {
+    currentLanguage = currentLanguage === "en" ? "ru" : "en";
+    updateContent(currentLanguage);
+});
+
+// Initial load
+updateContent(currentLanguage);
+
+</script>

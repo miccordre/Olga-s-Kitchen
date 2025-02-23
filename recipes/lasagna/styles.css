@@ -1,0 +1,490 @@
+*{
+  font-family: "Verdana";
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /*font-size: 1.25rem;*/
+  /*outline: solid yellow;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.header{
+  /*outline: solid black;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #FBF9F5;
+  padding: 0.6em;
+  gap: 10px;
+}
+
+.topdiv {
+  /*outline: solid yellow;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 75%;
+}
+
+#logo {
+  /*outline: solid black;*/
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.topmenu {
+  /*outline: solid red;*/
+  max-height: 100%;
+  color: #630116;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.topmenu:hover {
+  color: #7E892B;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 10%;
+  padding: 10px;
+  /*outline: solid red;*/
+  justify-content: space-around;
+  background-color: #556B2F;
+  flex-wrap: wrap;
+}
+
+.cover-subcontainer-left {
+  outline: dotted red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  max-width: 45%;
+  /*padding: 1%;*/
+  gap: 10px;
+  padding: 1%;
+}
+
+#cover-title {
+  outline: solid yellow;
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 3em;
+}
+
+#cover-photo {
+  /*outline: solid black;*/
+  width: 500px;
+  max-width: 100%;
+  /*aspect-ratio: 4/3;*/
+  height: auto;
+  /*margin: auto;*/
+  border-radius: 50%;
+  margin: auto;
+}
+
+.cover-subcontainer-right {
+  outline: solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 600px;
+  max-width: 55%;
+  gap: 5px;
+}
+
+#cook-time {
+  outline: dotted black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  height: auto;
+  /*max-height: 30%;*/
+}
+
+#cook-time-title {
+  outline: solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  /*padding: 10px;*/
+  font-size: 3em;
+  text-align: center;
+}
+
+#cook-times {
+  outline: solid blue;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 70%;
+  width: 100%;
+  gap: 10px;
+}
+
+#cook-time-title,#cook-times,#cover-title, .section-title {
+  font-family: "Georgia";
+  color: #4B3621;
+}
+
+.prep-time {
+  outline: solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*flex-shrink: 0;
+  flex-grow: 0;*/
+  /*height: 100px;*/
+  width: 150px;
+  /*max-width: 20%;*/
+  height: 80px;
+  max-height: 100%;
+  gap: 5px;
+  background-color: #F5F5DC;
+  border-radius: 10%;
+  opacity: 0.6;
+  word-wrap: break-word; /* Forces text to break at the container edge */
+  word-break: break-word; /* Ensures long words break to fit */
+  white-space: normal; /* Allows normal wrapping */
+}
+
+.time-allotment {
+  font-size: 0.75em;
+  max-width: 100%;
+  text-align: center;
+}
+
+.cook-time-stage {
+  text-align: center;
+  max-width: 100%;
+  font-size: 1em;
+}
+
+#cover-paragraph {
+  outline: solid orange;
+  width: 100%;
+  /*margin: auto;*/
+  padding: 10px;
+  line-height: 1.8;
+  /*font-size: 24px;*/
+  color: #333333;
+}
+
+.how-to-make {
+  outline: solid #4B3621;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /*align-items: center;*/
+  width: 800px;
+  max-width: 70%;
+  height: auto;
+  /*margin: auto;*/
+  padding: 10px;
+  gap: 10px;
+}
+
+#ingredients, #instructions {
+  word-wrap: break-word; /* Forces text to break at the container edge */
+  word-break: break-word; /* Ensures long words break to fit */
+  white-space: normal; /* Allows normal wrapping */
+  /*margin-bottom: 3vw;*/
+  line-height: 1.8;
+  /*font-size: 1em;*/
+  padding: 10px;
+  color: #8B0000;
+}
+
+#ingredients{
+  /*outline: dotted red;*/
+  background-color: #D2B48C;
+  width = 100%;
+  padding-left: 30px;
+}
+
+#ingredients-list {
+  list-style-type: circle;
+}
+
+#instructions {
+  /*outline: dotted blue;*/
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /*margin-top: 1vw;*/
+  background-color: #F5F5DC;
+  padding-left: 30px;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 2em;
+}
+
+.list-step {
+  /*outline: solid black;*/
+  padding: 5px;
+}
+
+.how-to-make-list {
+  list-style-type: circle;
+}
+
+.photo-pie {
+  float: left; /* Floats the image to the left */
+  margin-right: 2vw; /* Adds space between the image and the text */
+  margin-bottom: 1vw; /* Adds space below the image */
+    /*width: 200px; /* Adjust the width of the image */
+  width: 20vw;
+  max-width: 100%;
+  height: auto;*/
+}
+
+
+
+.toggle-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width: 480px) {
+        body {
+        font-size: 1.25rem;
+    }
+  .header{
+    font-size: 1rem;
+    justify-content: space-around;
+  }
+  .topdiv{
+    /*outline: solid black;*/
+    width: 100%;
+  }
+  #logo {
+    display: none;
+  }
+.cover {
+    row-gap: 5px;
+  }
+  .cover-subcontainer-left {
+    width: 100%;
+    height: 45%;
+    gap: 10px;
+    padding: 1%;
+  }
+  #cover-title {
+    font-size: 2rem;
+  }
+  .cover-subcontainer-right {
+    width: 100%;
+    height: 55%;
+  }
+  #cover-photo {
+  width: 300px;
+  max-width: 100%;
+  /*aspect-ratio: 4/3;*/
+  height: auto;
+  /*margin: auto;*/
+  border-radius: 50%;
+}
+  #cook-time-title {
+  font-size: 1.5rem;
+}
+  .how-to-make {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .prep-time {
+  /*flex-shrink: 0;
+  flex-grow: 0;*/
+  height: 100px;
+  width: 200px;
+  max-width: 20%;
+  max-height: 100%;
+  gap: 5px;
+  /*outline: solid black;*/
+}
+.time-allotment {
+  font-size: 0.5rem;
+}
+
+.cook-time-stage {
+  font-size: 0.6rem;
+}
+    #ingredients, #instructions {
+    width: 100%;
+  }
+    .section-title{
+    font-size: 1.5em;
+  }
+  .list-step {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+  .photo-pie {
+    width: 100%;
+  }
+}
+
+/* Small devices (tablets, 481px to 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.25rem;
+    }
+  .header{
+    font-size: 1rem;
+    justify-content: space-around;
+  }
+  .topdiv{
+    /*outline: solid black;*/
+    width: 100%;
+  }
+  #logo {
+    display: none;
+  }
+.cover {
+    row-gap: 5px;
+  }
+  .cover-subcontainer-left {
+    width: 100%;
+    height: 45%;
+    gap: 10px;
+    padding: 1%;
+  }
+  #cover-title {
+    font-size: 2rem;
+  }
+  .cover-subcontainer-right {
+    width: 100%;
+    height: 55%;
+  }
+  #cover-photo {
+  width: 300px;
+  max-width: 100%;
+  /*aspect-ratio: 4/3;*/
+  height: auto;
+  /*margin: auto;*/
+  border-radius: 50%;
+}
+  #cook-time-title {
+  font-size: 1.5em;
+}
+  .how-to-make {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .prep-time {
+  /*flex-shrink: 0;
+  flex-grow: 0;*/
+  height: 100px;
+  width: 200px;
+  max-width: 20%;
+  max-height: 100%;
+  gap: 5px;
+  /*outline: solid black;*/
+}
+.time-allotment {
+  font-size: 0.6em;
+}
+
+.cook-time-stage {
+  font-size: 0.7em;
+}
+    #ingredients, #instructions {
+    width: 100%;
+  }
+    .section-title{
+    font-size: 1.5em;
+  }
+  .list-step {
+  display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  .photo-pie {
+    width: 100%;
+  }
+}
+
+/* Medium devices (small laptops, 769px to 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.25rem;
+    }
+  .cover {
+    row-gap: 10px;
+  }
+  .cover-subcontainer-left {
+    width: 100%;
+    height: 45%;
+    gap: 10px;
+    padding: 1%;
+  }
+  .cover-subcontainer-right {
+    width: 100%;
+    height: 55%;
+  }
+}
+
+/* Large devices (desktops, 1025px to 1200px) */
+@media (max-width: 1200px) {
+    body {
+        font-size: 1.25rem;
+    }
+  .cover-subcontainer-left {
+    max-width: 100%;
+  }
+  .cover-subcontainer-right {
+    max-width: 100%;
+  }
+}
+
+/* Extra large devices (widescreen monitors, 1201px and above) */
+@media (min-width: 1201px) {
+    body {
+        font-size: 1.25rem;
+    }
+}
